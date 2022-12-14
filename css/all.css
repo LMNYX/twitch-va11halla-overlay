@@ -41,6 +41,7 @@ html, body
     width: 1230px;
     height: 194px;
     color: white;
+    z-index: 0;
 }
 
 .chat-box > p.chatter-message
@@ -49,6 +50,7 @@ html, body
     padding: 12px;
     font-size: 28px;
     line-height: 28px;
+    
 }
 
 .buttons-box
@@ -59,6 +61,20 @@ html, body
     width: 569px;
     height: 194px;
     color: white;
+    z-index: 0;
+}
+
+.buttons-box > .content
+{
+    /* centerize content using flex */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 28px;
+
 }
 
 .screen-box
@@ -68,6 +84,16 @@ html, body
     left: 61px;
     width: 1805px;
     height: 718px;
+    z-index: 0;
+}
+
+.scanlines {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 1%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.5) 75%, rgba(0,0,0,0.3) 99%, rgba(0,0,0,0.1) 100% );
+    background-size: 6px 6px;
+    width: 1920px;
+    height: 1080px;
+    opacity: 0.5;
+    z-index: 100 !important;
 }
 
 @font-face
