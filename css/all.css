@@ -1,0 +1,77 @@
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
+*
+{
+    font-family: 'Va-11 Hall-A';
+    image-rendering: optimizeSpeed;
+        /* STOP SMOOTHING, GIVE ME SPEED  */
+        image-rendering: -moz-crisp-edges;
+        /* Firefox                        */
+        image-rendering: -o-crisp-edges;
+        /* Opera                          */
+        image-rendering: -webkit-optimize-contrast;
+        /* Chrome (and eventually Safari) */
+        image-rendering: pixelated;
+        /* Universal support since 2021   */
+        image-rendering: optimize-contrast;
+        /* CSS3 Proposed                  */
+        -ms-interpolation-mode: nearest-neighbor;
+    font-smooth: never;
+        -webkit-font-smoothing: none;
+}
+
+.main
+{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+
+    background: url(../assets/background.png);
+}
+
+.chat-box
+{
+    position: absolute;
+    bottom: 60px;
+    left: 56px;
+    width: 1230px;
+    height: 194px;
+    color: white;
+}
+
+.chat-box > p.chatter-message
+{
+    margin: 0;
+    padding: 12px;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.buttons-box
+{
+    position: absolute;
+    bottom: 60px;
+    left: 1300px;
+    width: 569px;
+    height: 194px;
+    color: white;
+}
+
+.screen-box
+{
+    position: absolute;
+    top: 84px;
+    left: 61px;
+    width: 1805px;
+    height: 718px;
+}
+
+@font-face
+{
+    font-family: 'Va-11 Hall-A';
+    src: url(../assets/va11halla.ttf);
+}
